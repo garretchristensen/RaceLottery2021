@@ -6,7 +6,7 @@ The lottery is implemented via R Shiny apps [here](https://garretchristensen.shi
 The code for it is all in this repository that you're looking at.
 
 * Lottery.Rmd implements the lottery
-* test2021.csv and similarly named files are data for testing, and will be replaced with the real data as soon as it becomes available
+* test2021_noemails.csv and similarly named files are data for testing, and will be replaced with the real data as soon as it becomes available
 * HL2021data.csv is the real data, from RunSignup and verified by the RD
 
 
