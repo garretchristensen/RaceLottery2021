@@ -9,7 +9,7 @@ set.seed(18) #SET THE SEED WITH DICE!
 library(dplyr)
 library(tibble)
 library(readxl)
-temp<-read.csv("./test2021.csv", stringsAsFactors = FALSE) #LOAD THE DATA
+temp<-read.csv("./2021HL100FINAL.csv", stringsAsFactors = FALSE) #LOAD THE DATA
 df<-as_tibble(temp)
 
 df$fullname<-paste(df$First_Name, df$Last_Name, sep=" ", collapse = NULL)
@@ -64,8 +64,8 @@ men_waitlist_pool<-anti_join(men, men_winners)
 n_men_waitlist_pool<-nrow(men_waitlist_pool)
 
 #SIMPLER THIS YEAR, JUST ENTER THE NUMBERS FOR THE WL, 8 and 7
-n_women_wait_pick<-8
-n_men_wait_pick<-7
+n_women_wait_pick<-13
+n_men_wait_pick<-12
 
 #PICK THE WAITLISTERS
 #WOMEN MIGHT NOT HAVE ANY

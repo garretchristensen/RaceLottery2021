@@ -65,7 +65,7 @@ library(readxl)
 
 #I COULD MAKE THIS AN INTERACTIVE PART TOO LATER
 
-temp<-read.csv("./test2021.csv", stringsAsFactors = FALSE) #LOAD THE DATA
+temp<-read.csv("./2021HL100FINAL.csv", stringsAsFactors = FALSE) #LOAD THE DATA
 df<-as_tibble(temp)
 #THERE IS SOME STUPID NON-ASCII CHARACTER BEGINNING-OF-FILE 
 #NONSENSE GOING ON HERE
@@ -198,8 +198,8 @@ women<-df[which(df$Gender=="F"),]
   n_men_waitlist_pool<-nrow(men_waitlist_pool)
     
   #SIMPLER THIS YEAR, JUST ENTER THE NUMBERS FOR THE WL, 8 and 7
-  n_women_wait_pick<-8
-  n_men_wait_pick<-7
+  n_women_wait_pick<-13
+  n_men_wait_pick<-12
   
   #PICK THE WAITLISTERS
   #WOMEN MIGHT NOT HAVE ANY
@@ -257,4 +257,4 @@ women<-df[which(df$Gender=="F"),]
 
 
 ### 2021 Waitlist
-We picked 15 people for the waitlist, starting with women.
+We picked 25 people for the waitlist, starting with women.
